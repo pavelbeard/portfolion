@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { useRef } from "react";
+import { RefObject, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import useHeader from "../lib/hooks/useHeader";
@@ -9,16 +9,18 @@ import "./HeaderAnimation.css";
 import Burger from "./icons/Burger";
 import XIcon from "./icons/XIcon";
 import "./MenuAnimations.css";
+import useClickOutside from "../lib/hooks/useClickOutside";
 
 const Header = () => {
   const { t } = useTranslation();
   const { isBurgerOpen, toggleBurger, isDesktop } = useHeader();
-  const ref = useRef<HTMLDivElement>(null);
-
+  const ref = useClickOutside(() => closeBurger());
+  
   const closeBurger = () => {
     ref.current?.classList.replace("menu-expand", "menu-collapse");
     setTimeout(() => toggleBurger(), 240);
   };
+
 
   return (
     <header
@@ -42,7 +44,7 @@ const Header = () => {
             <XIcon />
           </button>
           <div
-            ref={ref}
+            ref={ref as RefObject<HTMLDivElement>}
             className="menu-expand flex flex-col bg-slate-100 dark:bg-slate-900 rounded-lg"
           >
             <Link
