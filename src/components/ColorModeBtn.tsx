@@ -1,10 +1,10 @@
+import clsx from "clsx";
+import { RefObject, useRef, useState } from "react";
+import useClickOutside from "../lib/hooks/useClickOutside";
+import useColorScheme from "../lib/hooks/useColorScheme";
 import NightMode from "./icons/NightMode";
 import SunMode from "./icons/SunMode";
 import SystemMode from "./icons/SystemMode";
-import clsx from "clsx";
-import useColorScheme from "../lib/hooks/useColorScheme";
-import { RefObject, useRef, useState } from "react";
-import useClickOutside from "../lib/hooks/useClickOutside";
 import "./MenuAnimations.css";
 
 const ColorModeBtn = () => {
@@ -30,7 +30,7 @@ const ColorModeBtn = () => {
       className={clsx(
         "group relative",
         "flex flex-row items-center",
-        "text-slate-900 dark:text-slate-300"
+        "text-slate-900 dark:text-slate-300",
       )}
     >
       {isOpen && (
