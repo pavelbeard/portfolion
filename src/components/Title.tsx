@@ -59,7 +59,7 @@ const Title = () => {
             )}
             to="https://linkedin.com/in/pavelbeard"
           >
-            {t('TITLE.OPEN_TO_WORK')}
+            {t("TITLE.OPEN_TO_WORK")}
           </Link>
         </div>
 
@@ -69,7 +69,7 @@ const Title = () => {
         </div>
         <div className="text-lg md:text-xl lg:text-2xl">
           <p>{t("TITLE.EXPERIENCE")}</p>
-          <p>{t('TITLE.ROLE')}</p>
+          <p>{t("TITLE.ROLE")}</p>
         </div>
         <div className="flex flex-col w-32 lg:flex-row gap-y-4 lg:gap-x-4">
           <LinkPill label="LinkedIn" href="https://linkedin.com/in/pavelbeard">
