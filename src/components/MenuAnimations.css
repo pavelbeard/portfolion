@@ -1,0 +1,31 @@
+.menu-expand {
+    animation: menu-expand .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: scale opacity .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menu-collapse {
+    animation: menu-collapse .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: scale opacity .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes menu-expand {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes menu-collapse {
+    from {
+        opacity: 1;
+        scale: 1;
+    }
+    to {
+        opacity: 0;
+        scale: 0.5;
+    }
+}
