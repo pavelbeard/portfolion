@@ -1,44 +1,19 @@
 import clsx from "clsx";
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { useScramble } from "use-scramble";
 import myFace from "../assets/my-face.jpeg";
 import Layout from "../Layout";
+import useScrambleText from "../lib/hooks/useScrambleText";
 import LinkedIn from "./icons/LinkedIn";
 import Mail from "./icons/Mail";
 import LinkPill from "./LinkPill";
 
 const Title = () => {
-  const [text, setText] = useState("PAVELBEARD");
   const { t } = useTranslation();
-  const { ref, replay } = useScramble({
-    playOnMount: false,
-    text: text,
-    speed: 0.18,
-    tick: 2,
-    seed: 2,
-    scramble: 2,
-    step: 4,
-    range: [65, 68],
+  const ref = useScrambleText({
+    initialText: "PAVELBEARD",
+    textArray: ["HEAVYCREAM", "PAVELBEARD"],
   });
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setText((prevState) => {
-        const nickName = ["HEAVYCREAM", "PAVELBEARD"].at(
-          Math.random() < 0.5 ? 0 : 1,
-        ) as string;
-        if (prevState == nickName) {
-          return prevState;
-        } else {
-          replay();
-          return nickName;
-        }
-      });
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <Layout className="px-16 text-slate-900 dark:text-slate-300 mt-40">
