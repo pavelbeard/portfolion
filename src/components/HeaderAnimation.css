@@ -1,16 +1,25 @@
+:root {
+  --bg-color: #00000018;
+}
+
+[class="dark"] {
+  --bg-color: #000000c1;
+}
+
 .nav-header {
-    animation: form-and-blur .8s cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-range-start: cover 10%;
-    animation-timeline: scroll();
+  -webkit-animation: form-and-blur 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: form-and-blur 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-range-start: cover 2%;
+  animation-timeline: scroll();
 }
 
 @keyframes form-and-blur {
-    from {
-        padding: 16px 128px;
-    }
-    to {
-        border-radius: 25px;
-        backdrop-filter: blur(5px);
-        background: #00000018;
-    }
+  from {
+    padding: 16px 128px;
+  }
+  to {
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    background: var(--bg-color);
+  }
 }

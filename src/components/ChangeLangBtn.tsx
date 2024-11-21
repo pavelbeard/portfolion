@@ -34,6 +34,7 @@ const ChangeLangBtn = ({}: Props) => {
       className={clsx(
         "group relative",
         "flex flex-row items-center",
+        "hover:text-slate-500 hover:dark:text-slate-300",
         "text-slate-900 dark:text-slate-300",
       )}
     >

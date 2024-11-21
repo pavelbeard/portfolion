@@ -19,7 +19,6 @@ const Footer = () => {
         <span ref={ref} />
       </div>
       <Link
-        id="contacts"
         to="mailto:heavycream9090@icloud.com"
         className="transition animate-pulse duration-300"
       >

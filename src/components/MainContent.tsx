@@ -11,7 +11,6 @@ import NextJsIcon from "./icons/NextJsIcon";
 import ReactIcon from "./icons/ReactIcon";
 import TailwindIcon from "./icons/TailwindIcon";
 import ProjectComponent from "./Project";
-import i18n from "../i18n";
 
 const TAGS: NamedTag = {
   REACT: {
@@ -35,7 +34,7 @@ const TAGS: NamedTag = {
   BOOTSTRAP: {
     name: "Bootstrap",
     class:
-      "bg-indigo-700/40 hover:bg-indigo-800/60 dark:bg-indigo-500/40 hover:dark:bg-indigo-500/60",
+      "bg-indigo-700/40 hover:bg-indigo-800/60 dark:bg-indigo-500/40 hover:dark:bg-indigo-500/80",
     icon: <BootstrapIcon />,
   },
   NEXTJS: {
@@ -87,27 +86,17 @@ const MainContent = () => {
           placeOfWork="Timshee.ru"
           period={t("MAIN_CONTENT.PERIOD_2")}
         >
-          <p>
-            {t("MAIN_CONTENT.COMPANY_2.DSCR_1")}
-          </p>
-          <p>
-            {t("MAIN_CONTENT.COMPANY_2.DSCR_2")}{" "}
-          </p>
+          <p>{t("MAIN_CONTENT.COMPANY_2.DSCR_1")}</p>
+          <p>{t("MAIN_CONTENT.COMPANY_2.DSCR_2")} </p>
         </Experience>
         <Experience
           jobLabel={t("MAIN_CONTENT.FULLSTACK")}
           placeOfWork={t("MAIN_CONTENT.COMPANY_1")}
           period={t("MAIN_CONTENT.PERIOD_1")}
         >
-          <p>
-            {t("MAIN_CONTENT.COMPANY_1.DSCR_1")}
-          </p>
-          <p>
-            {t("MAIN_CONTENT.COMPANY_1.DSCR_2")}
-          </p>
-          <p>
-            {t("MAIN_CONTENT.COMPANY_1.DSCR_3")}
-          </p>
+          <p>{t("MAIN_CONTENT.COMPANY_1.DSCR_1")}</p>
+          <p>{t("MAIN_CONTENT.COMPANY_1.DSCR_2")}</p>
+          <p>{t("MAIN_CONTENT.COMPANY_1.DSCR_3")}</p>
         </Experience>
       </Layout>
       <Layout id="projects" className="flex flex-col gap-y-8 px-16 mt-20">

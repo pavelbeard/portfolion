@@ -111,3 +111,7 @@ body {
   overscroll-behavior: none;
   min-height: 100vh;
 }
+
+.icon-style {
+  @apply size-10 md:size-12 xl:size-14 p-2 rounded-lg
+}

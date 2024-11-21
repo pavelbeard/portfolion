@@ -6,9 +6,11 @@ import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
+import Stack from "./components/Stack";
 import Title from "./components/Title";
 
 import "./i18n";
+import ContactForm from "./components/ContactForm";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <div className="col-start-2">
           <Title />
           <MainContent />
+          <Stack />
+          <ContactForm />
           <AboutMe />
           <Footer />
         </div>

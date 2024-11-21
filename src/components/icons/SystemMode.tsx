@@ -1,4 +1,4 @@
-const SystemMode = ({ className }: { className?: string }) => {
+const SystemMode = ({ ...props }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +10,7 @@ const SystemMode = ({ className }: { className?: string }) => {
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={className}
+      {...props}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 19l18 0" />
