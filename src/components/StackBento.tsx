@@ -15,6 +15,9 @@ const StackBento = ({ title, rowSpan, colSpan, children }: Props) => {
         "flex flex-col gap-y-2 h-96 w-full p-6",
         "rounded-xl",
         "bg-red-800/20",
+        "transition duration-300",
+        "hover:shadow-xl hover:shadow-red-600/20 hover:dark:shadow-red-800",
+
         rowSpan,
         colSpan,
       )}

@@ -11,9 +11,11 @@ const Project = ({ title, description, link, github, img, tags }: Project) => {
     <article className="flex flex-col lg:flex-row gap-y-8 md:gap-x-8">
       <img
         className={clsx(
-          "rounded-xl h-48 w-64 lg:h-64 lg:w-80 transition duration-300 border-rose-800 dark:border-rose-400 border-[0.5px] ease-in",
+          "rounded-xl h-48 w-64 lg:h-64 lg:w-80 transition duration-300",
+          "border-rose-800 dark:border-rose-400 border-[0.5px] ease-in",
           "hover:scale-[1.02] hover:translate-x-[2px] hover:-translate-y-[2px]",
           "hover:border-[1px]",
+          "hover:shadow-xl hover:shadow-red-600/20 hover:dark:shadow-red-800"
         )}
         src={img}
         alt={title}
