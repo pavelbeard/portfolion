@@ -33,5 +33,10 @@
   "STACK.FRONTEND": "Frontend",
   "STACK.LANGUAGES": "Languages",
   "STACK.INSTRUMENTS": "Tools",
-  "STACK.STUDY": "What I study"
+  "STACK.STUDY": "What I study",
+  "CONTACT_ME.BODY_PLACEHOLDER": "Text a message...",
+  "CONTACT_ME.FROM_PLACEHOLDER": "From who?",
+  "CONTACT_ME.SUBJECT_PLACEHOLDER": "Text a subject...",
+  "CONTACT_ME.FROM": "From",
+  "CONTACT_ME.WITH_RESPECT": "With respect"
 }

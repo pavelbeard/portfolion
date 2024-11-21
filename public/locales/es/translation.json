@@ -29,7 +29,14 @@
   "STACK.LANGUAGES": "Lenguajes de programación",
   "STACK.INSTRUMENTS": "Herramientas",
   "STACK.STUDY": "Lo que estudio",
-  "CONTACT_ME.SUBJECT": "Sujeto",
+  "CONTACT_ME.SUBJECT": "Asunto",
   "CONTACT_ME.BODY": "Mensaje",
-  "CONTACT_ME.SEND": "Enviar"
+  "CONTACT_ME.SEND": "Enviar",
+  "CONTACT_ME.BODY_PLACEHOLDER": "Enscribe un mensaje de texto...",
+  "STACK.BACKEND": "Backend",
+  "STACK.FRONTEND": "Frontend",
+  "CONTACT_ME.FROM_PLACEHOLDER": "¿De quién?",
+  "CONTACT_ME.SUBJECT_PLACEHOLDER": "Escribe un asunto...",
+  "CONTACT_ME.FROM": "De",
+  "CONTACT_ME.WITH_RESPECT": "Un saludo"
 }
