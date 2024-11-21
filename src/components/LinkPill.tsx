@@ -9,6 +9,7 @@ const LinkPill = ({ label, href, children }: Props) => {
   return (
     <Link
       className={clsx(
+        "group",
         "inline-flex gap-x-2 items-center px-4 py-2",
         "border-[1px] border-rose-800 dark:border-rose-400 rounded-2xl",
         "transition duration-300",

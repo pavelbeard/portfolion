@@ -9,17 +9,23 @@ const Project = ({ title, description, link, github, img, tags }: Project) => {
   const { t } = useTranslation();
   return (
     <article className="flex flex-col lg:flex-row gap-y-8 md:gap-x-8">
-      <img
+      <div
         className={clsx(
-          "rounded-xl h-48 w-64 lg:h-64 lg:w-80 transition duration-300",
-          "border-rose-800 dark:border-rose-400 border-[0.5px] ease-in",
-          "hover:scale-[1.02] hover:translate-x-[2px] hover:-translate-y-[2px]",
-          "hover:border-[1px]",
-          "hover:shadow-xl hover:shadow-red-600/20 hover:dark:shadow-red-800"
+          "group overflow-clip rounded-xl border-rose-800/50 dark:border-rose-400 border",
+          "transition duration-300 hover:-translate-y-[0.7px] hover:translate-x-[0.7px]",
         )}
-        src={img}
-        alt={title}
-      />
+      >
+        <img
+          className={clsx(
+            "object-cover object-top",
+            "h-48 w-64 lg:h-64 lg:w-80 transition duration-300 ease-in",
+            "group-hover:scale-[1.02] group-hover:translate-x-[2px] group-hover:-translate-y-[2px]",
+            "group-hover:shadow-xl group-hover:shadow-red-600/20 group-hover:dark:shadow-red-800",
+          )}
+          src={img}
+          alt={title}
+        />
+      </div>
       <div className="flex flex-col justify-between gap-y-4 items-start">
         <div className="flex flex-col gap-y-2">
           <h3 className="font-bold text-lg md:text-xl lg:text-2xl">{title}</h3>
