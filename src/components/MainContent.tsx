@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import carteraCapture from "../assets/projects/cartera.webp";
 import timsheeCapture from "../assets/projects/timshee.webp";
 import Layout from "../Layout";
 import { NamedTag, type Project } from "../lib/types";
@@ -10,6 +11,7 @@ import FlaskIcon from "./icons/FlaskIcon";
 import NextJsIcon from "./icons/NextJsIcon";
 import ReactIcon from "./icons/ReactIcon";
 import TailwindIcon from "./icons/TailwindIcon";
+import TSIcon from "./icons/TSIcon";
 import ProjectComponent from "./Project";
 
 const TAGS: NamedTag = {
@@ -39,8 +41,15 @@ const TAGS: NamedTag = {
   },
   NEXTJS: {
     name: "Next.js",
-    class: "bg-black/40 hover:bg-black/60",
+    class:
+      "bg-black/40 hover:bg-black/60 dark:bg-black/40 hover:dark:bg-black/60",
     icon: <NextJsIcon />,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class:
+      "bg-blue-700/40 hover:bg-blue-800/60 dark:bg-blue-400/40 hover:dark:bg-blue-500/60",
+    icon: <TSIcon className="size-4" />,
   },
 };
 
@@ -62,15 +71,15 @@ const PROJECTS: Project[] = [
   //   img: timsheeCapture,
   //   tags: [TAGS.DJANGO, TAGS.REACT, TAGS.BOOTSTRAP],
   // },
-  // {
-  //   title: "Password Manager",
-  //   description:
-  //     "My proper project, that is designed to show my skills in Next.js. This project supports Credentials, 2FA and Oauth2 by Google authentications.",
-  //   // link: "https://heavycream.es",
-  //   github: "https://github.com/pavelbeard/wallet",
-  //   img: timsheeCapture,
-  //   tags: [TAGS.DJANGO, TAGS.NEXTJS, TAGS.TAILWIND],
-  // },
+  {
+    title: "Password Manager | Cartera",
+    description:
+      "My proper project, that is designed to show my skills in Next.js. This project supports Credentials, 2FA and Oauth2 by Google authentications. It's creating from scratch using Next.js, Tailwind CSS, TypeScript, React, Django and PostgreSQL.",
+    // link: "https://heavycream.es",
+    github: "https://github.com/pavelbeard/wallet",
+    img: carteraCapture,
+    tags: [TAGS.DJANGO, TAGS.NEXTJS, TAGS.TAILWIND, TAGS.TYPESCRIPT],
+  },
 ];
 
 const MainContent = () => {
