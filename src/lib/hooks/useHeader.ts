@@ -17,31 +17,34 @@ export default function useHeader() {
   }, [isDesktop]);
 
   useEffect(() => {
-    if (headerRef.current) {
-      const $navigation = headerRef.current;
-      const $rootStyle = getComputedStyle(document.documentElement);
+    try {
+      if (headerRef.current) {
+        const $navigation = headerRef.current;
+        const $rootStyle = getComputedStyle(document.documentElement);
 
-      if (!document.body.style.getPropertyValue("animation-timeline")) {
-        $navigation.animate(
-          [
-            { padding: "16px 128px" },
+        if (!document.body.style.getPropertyValue("animation-timeline")) {
+          $navigation.animate(
+            [
+              { padding: "16px 128px" },
+              {
+                borderRadius: "25px",
+                backdropFilter: "blur(5px)",
+                background: $rootStyle.getPropertyValue("--bg-color"),
+              },
+            ],
             {
-              borderRadius: "25px",
-              backdropFilter: "blur(5px)",
-              background: $rootStyle.getPropertyValue("--bg-color"),
+              // @ts-ignore
+              timeline: new ScrollTimeline({
+                source: document.documentElement,
+              }),
+              // @ts-ignore
+              rangeStart: new CSSUnitValue(50, "px"),
             },
-          ],
-          {
-            // @ts-ignore
-            timeline: new ScrollTimeline({
-              source: document.documentElement,
-            }),
-            // @ts-ignore
-            rangeStart: new CSSUnitValue(50, "px"),
-          },
-        );
+          );
+        }
       }
-    }
+      // On safari iOS (17.5) polyfill is not working
+    } catch {}
   }, [headerRef, isDesktop]);
 
   return {
