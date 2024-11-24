@@ -7,13 +7,13 @@
 }
 
 .nav-header {
-  -webkit-animation: form-and-blur 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation: form-and-blur 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-animation: blurScroll 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: blurScroll 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-range-start: cover 2%;
   animation-timeline: scroll();
 }
 
-@keyframes form-and-blur {
+@keyframes blurScroll {
   from {
     padding: 16px 128px;
   }
