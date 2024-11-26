@@ -13,6 +13,7 @@ import ReactIcon from "./icons/ReactIcon";
 import TailwindIcon from "./icons/TailwindIcon";
 import TSIcon from "./icons/TSIcon";
 import ProjectComponent from "./Project";
+import clsx from "clsx";
 
 const TAGS: NamedTag = {
   REACT: {
@@ -87,7 +88,10 @@ const MainContent = () => {
   return (
     <>
       <Layout id="experience" className="flex flex-col gap-y-8 px-16 mt-20">
-        <div className="font-bold flex items-center gap-x-2 text-slate-900 dark:text-slate-300 text-xl md:text-2xl lg:text-4xl">
+        <div className={clsx(
+          "font-bold flex items-center gap-x-2 text-xl md:text-2xl lg:text-4xl",
+          "text-red-600 drop-shadow-xl"
+        )}>
           <FlaskIcon className="size-8" /> {t("MAIN_CONTENT.EXPERIENCE")}
         </div>
         <Experience
@@ -109,7 +113,7 @@ const MainContent = () => {
         </Experience>
       </Layout>
       <Layout id="projects" className="flex flex-col gap-y-8 px-16 mt-20">
-        <div className="font-bold flex items-center gap-x-2 text-slate-900 dark:text-slate-300 text-xl md:text-2xl lg:text-4xl">
+        <div className="font-bold flex items-center gap-x-2 text-red-600 drop-shadow-xl text-xl md:text-2xl lg:text-4xl">
           <ChecklistIcon className="size-8" /> {t("MAIN_CONTENT.PROJECTS")}
         </div>
         <div className="flex flex-col gap-y-16 text-slate-900 dark:text-slate-300">

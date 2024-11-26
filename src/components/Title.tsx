@@ -40,7 +40,14 @@ const Title = () => {
 
         <div className="flex flex-col lg:flex-row text-xl md:text-2xl lg:text-4xl">
           <p className="font-bold">{t("TITLE.HELLO")}</p>
-          <p ref={ref} className="lg:ml-4 font-bold tracking-widest" />
+          <p
+            ref={ref}
+            className={clsx(
+              "lg:ml-4 font-bold tracking-widest",
+              "text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-500",
+              "dark:from-red-500 dark:to-red-300",
+            )}
+          />
         </div>
         <div className="text-lg md:text-xl lg:text-2xl">
           <p>{t("TITLE.EXPERIENCE")}</p>

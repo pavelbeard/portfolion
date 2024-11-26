@@ -9,12 +9,12 @@ const Stack = () => {
   const { t } = useTranslation()
   return (
     <Layout className="flex flex-col gap-y-8 px-16 text-slate-900 dark:text-slate-300 mt-20">
-      <p
+      <div
         id="tech-stack"
-        className="flex items-center gap-x-2 text-xl md:text-2xl lg:text-4xl font-bold tracking-wide"
+        className="flex items-center gap-x-2 text-xl md:text-2xl lg:text-4xl font-bold tracking-wide text-red-600 drop-shadow-xl"
       >
         <StackIcon className="size-8" /> {t("STACK.TITLE")}
-      </p>
+      </div>
       <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:grid-rows-3 z-0">
         <StackBento title={t("STACK.BACKEND")}>
           <Icon name={Icons.Django} />

@@ -24,7 +24,7 @@ const ContactForm = () => {
     <Layout className="flex flex-col text-slate-900 dark:text-slate-300 px-16 mt-20">
       <p
         id="contacts"
-        className="flex items-center gap-x-2 text-xl md:text-2xl lg:text-4xl font-bold tracking-wide"
+        className="flex items-center gap-x-2 text-red-600 drop-shadow-xl text-xl md:text-2xl lg:text-4xl font-bold tracking-wide"
       >
         <ContactMeIcon className="size-8" /> {t("CONTACT_ME.TITLE")}
       </p>
