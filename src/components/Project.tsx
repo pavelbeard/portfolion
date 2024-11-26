@@ -11,7 +11,7 @@ const Project = ({ title, description, link, github, img, tags }: Project) => {
     <article className="flex flex-col lg:flex-row gap-y-8 md:gap-x-8">
       <div
         className={clsx(
-          " max-lg:self-start group overflow-clip rounded-xl border-rose-800/50 dark:border-rose-400 border",
+          " max-lg:self-start group overflow-clip rounded-xl",
           "transition duration-300 hover:-translate-y-[0.7px] hover:translate-x-[0.7px]",
         )}
       >
