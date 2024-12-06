@@ -58,7 +58,7 @@ const PROJECTS: Project[] = [
   {
     title: "Timshee.ru",
     description: "MAIN_CONTENT_TIMSHEE_DSCR",
-    link: "https://heavycream.es",
+    link: "https://timshee.ru",
     github: "https://github.com/pavelbeard/timshee",
     img: timsheeCapture,
     tags: [TAGS.DJANGO, TAGS.REACT, TAGS.TAILWIND],
