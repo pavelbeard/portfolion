@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { useTranslation } from "react-i18next";
 import carteraCapture from "../assets/projects/cartera.webp";
 import timsheeCapture from "../assets/projects/timshee.webp";
@@ -13,7 +14,6 @@ import ReactIcon from "./icons/ReactIcon";
 import TailwindIcon from "./icons/TailwindIcon";
 import TSIcon from "./icons/TSIcon";
 import ProjectComponent from "./Project";
-import clsx from "clsx";
 
 const TAGS: NamedTag = {
   REACT: {
@@ -75,8 +75,11 @@ const PROJECTS: Project[] = [
   {
     title: "Password Manager | Cartera",
     description:
-      "My proper project, that is designed to show my skills in Next.js. This project supports Credentials, 2FA and Oauth2 by Google authentications. It's creating from scratch using Next.js, Tailwind CSS, TypeScript, React, Django and PostgreSQL.",
-    // link: "https://heavycream.es",
+      "My proper project, that is designed to show my skills in Next.js." +
+      "This project supports Credentials, 2FA and Oauth2 by Google authentications." +
+      "It's creating from scratch using Next.js, Tailwind CSS, TypeScript, React, Django and PostgreSQL." +
+      "At the moment I did Security part of the project and I'm working on the Password Management part.",
+    link: "https://cusec.es",
     github: "https://github.com/pavelbeard/wallet",
     img: carteraCapture,
     tags: [TAGS.DJANGO, TAGS.NEXTJS, TAGS.TAILWIND, TAGS.TYPESCRIPT],
@@ -88,10 +91,12 @@ const MainContent = () => {
   return (
     <>
       <Layout id="experience" className="flex flex-col gap-y-8 px-16 mt-20">
-        <div className={clsx(
-          "font-bold flex items-center gap-x-2 text-xl md:text-2xl lg:text-4xl",
-          "text-red-600 drop-shadow-xl"
-        )}>
+        <div
+          className={clsx(
+            "font-bold flex items-center gap-x-2 text-xl md:text-2xl lg:text-4xl",
+            "text-red-600 drop-shadow-xl",
+          )}
+        >
           <FlaskIcon className="size-8" /> {t("MAIN_CONTENT.EXPERIENCE")}
         </div>
         <Experience
