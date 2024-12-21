@@ -28,7 +28,7 @@ const Project = ({ title, description, link, github, img, tags }: Project) => {
       </div>
       <div className="flex flex-col gap-y-4 items-start">
         <div className="flex flex-col gap-y-2">
-          <h3 className="font-bold text-lg md:text-xl lg:text-2xl">{title}</h3>
+          <h3 className="font-bold text-md md:text-lg lg:text-xl">{title}</h3>
           <ul className="flex flex-col md:flex-row gap-y-4 md:gap-x-4">
             {tags.map((tag) => (
               <li
@@ -45,7 +45,7 @@ const Project = ({ title, description, link, github, img, tags }: Project) => {
             ))}
           </ul>
         </div>
-        <p className="flex-grow lg:max-w-[480px]">{t(description)}</p>
+        <p className="flex-grow text-sm lg:max-w-[480px]">{t(description)}</p>
         <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-4">
           {github && (
             <LinkPill label="Github" href={github}>
