@@ -18,7 +18,7 @@
   "HEADER.EXPERIENCE": "Experiencia",
   "HEADER.ABOUT_ME": "Sobre mí",
   "HEADER.CONTACTS": "Contactos",
-  "MAIN_CONTENT_TIMSHEE_DSCR": "La tienda online de la ropa luja. Lo ha creado desde cero con Django, React, TailwindCSS. Una enlace abaja para demostrar.\"",
+  "MAIN_CONTENT_TIMSHEE_DSCR": "La tienda online de la ropa luja. Lo ha creado desde cero con Django, React, TailwindCSS. El enlace está abajo para demostrarlo.",
   "FOOTER.CONTACT": "Contáctame",
   "ABOUT_ME.TEXT": "Cuando era estudiante, tenía 20 años, no me gustaba la programación. \nHasta que comencé a aprender programación yo mismo. \nEmpecé a aprenderlo con varias páginas web, que están dedicadas a lenguajes de programación: C++, C#, JavaScript, Python y más. Actualmente me quedé en Python y JS, y yo tengo proyectos, que están construido en estos lenguajes.",
   "ABOUT_ME.TITLE": "Sobre mí",
