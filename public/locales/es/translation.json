@@ -19,6 +19,7 @@
   "HEADER.ABOUT_ME": "Sobre mí",
   "HEADER.CONTACTS": "Contactos",
   "MAIN_CONTENT_TIMSHEE_DSCR": "La tienda online de la ropa luja. Lo ha creado desde cero con Django, React, TailwindCSS. El enlace está abajo para demostrarlo.",
+  "MAIN_CONTENT_WALLET_DSCR": "Mi proyecto propio, que está diseñado para mostrar mis habilidades en Next.js. Este proyecto soporta autenticaciones de Credenciales, 2FA y Oauth2 por Google. Está creado desde cero usando Next.js, Tailwind CSS, TypeScript, React, Django y PostgreSQL. En este momento hice la parte de Seguridad del proyecto y estoy trabajando en la parte de Gestión de Contraseñas.",
   "FOOTER.CONTACT": "Contáctame",
   "ABOUT_ME.TEXT": "Cuando era estudiante, tenía 20 años, no me gustaba la programación. \nHasta que comencé a aprender programación yo mismo. \nEmpecé a aprenderlo con varias páginas web, que están dedicadas a lenguajes de programación: C++, C#, JavaScript, Python y más. Actualmente me quedé en Python y JS, y yo tengo proyectos, que están construido en estos lenguajes.",
   "ABOUT_ME.TITLE": "Sobre mí",

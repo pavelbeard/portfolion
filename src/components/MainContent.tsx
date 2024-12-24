@@ -74,11 +74,7 @@ const PROJECTS: Project[] = [
   // },
   {
     title: "Password Manager | Cartera",
-    description:
-      "My proper project, that is designed to show my skills in Next.js." +
-      "This project supports Credentials, 2FA and Oauth2 by Google authentications." +
-      "It's creating from scratch using Next.js, Tailwind CSS, TypeScript, React, Django and PostgreSQL." +
-      "At the moment I did Security part of the project and I'm working on the Password Management part.",
+    description: "MAIN_CONTENT_WALLET_DSCR",
     link: "https://cusec.es",
     github: "https://github.com/pavelbeard/wallet",
     img: carteraCapture,

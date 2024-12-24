@@ -19,6 +19,7 @@
   "HEADER.ABOUT_ME": "About me",
   "HEADER.CONTACTS": "Contacts",
   "MAIN_CONTENT_TIMSHEE_DSCR": "The online luxury clothing store. Created it from scratch with Django, React and TailwindCSS. A link below to demonstrate.",
+  "MAIN_CONTENT_WALLET_DSCR": "My proper project, that is designed to show my skills in Next.js. This project supports Credentials, 2FA and Oauth2 by Google authentications. It's creating from scratch using Next.js, Tailwind CSS, TypeScript, React, Django and PostgreSQL. At the moment I did Security part of the project and I'm working on the Password Management part.",
   "FOOTER.CONTACT": "Contact me",
   "ABOUT_ME.TEXT": "When I was a student, 20 years old, I didn't like programming. Until I started to learn programming myself. I started learning it with various web pages, which are dedicated to programming languages: C++, C#, JavaScript, Python and more. Actually I settled on Python and JS, and I have projects, which were built on these languages.",
   "ABOUT_ME.TITLE": "About me",
